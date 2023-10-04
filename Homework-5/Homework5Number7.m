@@ -14,11 +14,19 @@ vpa(step2) ; %%%Still in nano coulombs
 %%%% Part B : Calculating Electric Field at (0,0,5) ; 
 
 
-point = [-x -y 5] ;
+point(x,y,z) = [(-x^(2)*y) (-y^(2))*x 5*x*y] ;
 
-step3 = point*fun ; 
-step4 = step3 / (norm(point))^2  ;
-step5 = int(step4,x,0,1) ; 
-step6 = int(step5,x,0,1)
+step3 = int(point,x,0,1) ; 
+step4 = int(step3,y,0,1) ; 
+step5 = step4 / (4*pi*8.854*10^(-12))
+step6 = step5 * 10^(-9) ;
+vpa(step6)
+
+step7 = step6 * -.001 ; 
+vpa(step7)
+
+
+
+
 
 
