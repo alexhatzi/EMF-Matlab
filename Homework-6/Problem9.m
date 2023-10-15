@@ -32,5 +32,4 @@ step4 = -1*bleh*log(P2/D2) ;
 
 
 step5 = step3 + step4 ; 
-vpa(step5) 
-
+vpa(step5)
