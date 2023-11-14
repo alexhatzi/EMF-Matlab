@@ -18,6 +18,7 @@ k = (10^(8)) * sqrt(u*e)
 
 E = 20*sin(  (10^(8))*t - k*z) ;
 
+% Equation 7.27 
 
 Efield = [0 E 0] ;
 Field = [x y z]  ;
