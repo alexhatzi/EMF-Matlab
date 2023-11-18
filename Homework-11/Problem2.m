@@ -44,10 +44,10 @@ vpa(phase)
 
 
 
-
-Test(t,x) = 10*cosd(1.2*pi*10^(8)*t + 0.8*pi*x + 47) ; 
-vpa(Test(0,-0.75))
-
+                                 %t=0        %x =-0.75
+Test = 7 == 10*cosd(1.2*pi*10^(8)*0 + 0.8*pi*(-0.75) + p ) ; 
+answer = solve(Test,p) ;
+vpa(answer)
 
 
 
