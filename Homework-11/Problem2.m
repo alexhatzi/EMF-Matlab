@@ -45,11 +45,8 @@ vpa(phase)
 
 %Calculating phase
                                  %t=0        %x =-0.75
-Test = .007 == .01*cosd(0 + 0.8*pi*(-0.75) + p ) ; 
-answer = solve(Test,p) ;
-vpa(answer)
-
-
+Test = 1*cosd(0 + 0.8*pi*(-0.75) + 153 ) ; 
+vpa(Test)
 
 
 
