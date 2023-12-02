@@ -20,7 +20,16 @@ theta = angle(eta)
 
 E0 = 1 ;
 % Back to Equation 7.109
-Coefficient = (E0^2)/(2*abs(eta)) * cos(theta)
+Coefficient = (E0^2)/(2*abs(eta)) * cos(theta) ;
+
+syms z 
+S(z) = Coefficient * exp(-2*alfa*z) ; 
+vpa(S(0))  
+
+% Skin depth = 1/alfa
+deltas = 1/alfa ; 
+
+vpa(S(deltas))
 
 
 
