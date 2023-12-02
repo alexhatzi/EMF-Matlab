@@ -15,12 +15,12 @@ alfa = sqrt(pi*f*mu*sigma) ;
 
 % 7.77c
 eta = (1-i)*(alfa/sigma) ; 
-theta = imag(eta) 
-real = real(eta)
+theta = angle(eta) 
+
 
 E0 = 1 ;
 % Back to Equation 7.109
-Coefficient = (E0^2)/(2*abs(eta)) * cos()
+Coefficient = (E0^2)/(2*abs(eta)) * cos(theta)
 
 
 
